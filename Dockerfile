@@ -5,7 +5,7 @@ RUN \
 RUN \
   apt-get install -y software-properties-common
 RUN \
-  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN \
   apt-get update
 
