@@ -40,6 +40,27 @@ RUN \
 
 RUN \
   apt-get install -y \
+    python3-pip \
+    && \
+  echo "installed pip3"
+  
+RUN \
+  pip3 install \
+    keyname \
+    fileshash \
+    iterpop \
+    numpy \
+    pandas \
+    scipy \
+    statsmodels \
+    matplotlib \
+    seaborn \
+    python-slugify \
+    && \
+  echo "installed python packages"
+
+RUN \
+  apt-get install -y \
     make \
     curl \
     git \
