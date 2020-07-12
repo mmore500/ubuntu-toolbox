@@ -33,6 +33,13 @@ RUN \
 
 RUN \
   apt-get install -y \
+    gdb \
+    valgrind \
+    && \
+  echo "installed profiling and debugging tools"
+
+RUN \
+  apt-get install -y \
     make \
     curl \
     git \
