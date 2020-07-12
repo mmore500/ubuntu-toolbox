@@ -21,7 +21,9 @@ RUN \
   echo "apt-get updated (again)"
 
 RUN \
-  apt-get install -y gcc-9 \
+  apt-get install -y \
+    gcc-9 \
+    llvm-toolchain-9 \
     && \
   echo "installed compilers"
 
