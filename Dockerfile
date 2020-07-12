@@ -1,16 +1,29 @@
 FROM ubuntu:latest
 
 RUN \
-  apt-get update
-RUN \
-  apt-get install -y software-properties-common
-RUN \
-  add-apt-repository ppa:ubuntu-toolchain-r/test
-RUN \
-  apt-get update
+  apt-get update \
+    && \
+  echo "apt-get updated"
 
 RUN \
-  apt-get install -y gcc-9
+  apt-get install -y software-properties-common \
+    && \
+  echo "enabled add-apt-repository"
+
+RUN \
+  add-apt-repository ppa:ubuntu-toolchain-r/test \
+    && \
+  echo "added ubuntu-toolchain-r repository"
+  
+RUN \
+  apt-get update \
+    && \
+  echo "apt-get updated (again)"
+
+RUN \
+  apt-get install -y gcc-9 \
+    && \
+  echo "installed compilers"
 
 RUN \
   apt-get install -y \
