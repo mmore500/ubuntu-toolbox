@@ -25,7 +25,6 @@ RUN \
     gcc \
     g++ \
     clang \
-    clang++ \
     && \
   echo "installed compilers"
 
