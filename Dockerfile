@@ -22,10 +22,8 @@ RUN \
 
 RUN \
   apt-get install -y \
-    gcc-9 \
     gcc \
     g++ \
-    llvm-toolchain-9 \
     clang \
     clang++ \
     && \
