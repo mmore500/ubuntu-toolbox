@@ -5,7 +5,7 @@ RUN \
 RUN \
   apt-get install -y software-properties-common
 RUN \
-  add-apt-repository -y ppa:jonathonf/gcc-9.0
+  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN \
   apt-get update
 
